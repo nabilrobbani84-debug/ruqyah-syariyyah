@@ -141,3 +141,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Use cookie-based sessions to avoid DB writes on Vercel
+SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'

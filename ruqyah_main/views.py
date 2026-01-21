@@ -30,24 +30,26 @@ class AppointmentForm(forms.ModelForm):
 import urllib.parse
 from .models import Appointment, BusinessProfile
 
+
+# Static configuration for Vercel/ReadOnly environment
+class BusinessConfig:
+    name = "Ruqyah Syar'iyyah Tanpa Kesurupan"
+    therapist_name = "Ust. Budi Prastowo"
+    address = "Jl. H. Anan No.124 RT01 RW07 Pedurenan Bulak, Jatiluhur, Kec. Jatiasih, Kota Bekasi, Jawa Barat 17425"
+    phone = "0856-9739-7988"
+    rating = 5.0
+    review_count = 415
+    map_embed_url = "https://maps.google.com/maps?q=Ruqyah%20Syar'iyyah%20Tanpa%20Kesurupan%20Ust%20Budi%20Prastowo&t=&z=15&ie=UTF8&iwloc=&output=embed"
+
 def landing_page(request):
-    # Fetch or create default business profile
-    business = BusinessProfile.objects.first()
-    if not business:
-        business = BusinessProfile.objects.create(
-            name="Ruqyah Syar'iyyah Tanpa Kesurupan",
-            therapist_name="Ust. Budi Prastowo",
-            address="Jl. H. Anan No.124 RT01 RW07 Pedurenan Bulak, Jatiluhur, Kec. Jatiasih, Kota Bekasi, Jawa Barat 17425",
-            phone="0856-9739-7988",
-            rating=5.0,
-            review_count=415,
-            map_embed_url="https://maps.google.com/maps?q=Ruqyah%20Syar'iyyah%20Tanpa%20Kesurupan%20Ust%20Budi%20Prastowo&t=&z=15&ie=UTF8&iwloc=&output=embed"
-        )
+    # Use static config instead of database lookup
+    business = BusinessConfig()
     
     if request.method == 'POST':
         form = AppointmentForm(request.POST)
         if form.is_valid():
-            appointment = form.save()
+            # commit=False creates the object in memory but doesn't write to the readonly database
+            appointment = form.save(commit=False)
             
             target_phone = business.phone.replace("-", "").replace(" ", "").replace("+", "")
             if target_phone.startswith("0"):
