@@ -4,17 +4,14 @@ from django.contrib import messages
 from .models import Appointment
 
 class AppointmentForm(forms.ModelForm):
+
     class Meta:
         model = Appointment
-        fields = ['patient_name', 'phone', 'date', 'complaint']
+        fields = ['patient_name', 'date', 'complaint']
         widgets = {
             'patient_name': forms.TextInput(attrs={
                 'class': 'w-full px-4 py-3 rounded-lg border border-forest-green/20 focus:outline-none focus:border-forest-green focus:ring-1 focus:ring-forest-green bg-cream/50',
                 'placeholder': 'Nama Lengkap'
-            }),
-            'phone': forms.TextInput(attrs={
-                'class': 'w-full px-4 py-3 rounded-lg border border-forest-green/20 focus:outline-none focus:border-forest-green focus:ring-1 focus:ring-forest-green bg-cream/50',
-                'placeholder': '08xx-xxxx-xxxx'
             }),
             'date': forms.DateTimeInput(attrs={
                 'type': 'datetime-local',
@@ -26,6 +23,7 @@ class AppointmentForm(forms.ModelForm):
                 'placeholder': 'Ceritakan keluhan Anda...'
             })
         }
+
 
 import urllib.parse
 from .models import Appointment, BusinessProfile
@@ -59,7 +57,6 @@ def landing_page(request):
                 f"Assalamualaikum Ust. Budi,\n\n"
                 f"Saya ingin melakukan reservasi Ruqyah.\n\n"
                 f"Nama: {appointment.patient_name}\n"
-                f"No. WA: {appointment.phone}\n"
                 f"Rencana Tanggal: {appointment.date.strftime('%d-%m-%Y %H:%M')}\n"
                 f"Keluhan: {appointment.complaint}\n\n"
                 f"Mohon info ketersediaan jadwalnya. Terima kasih."
