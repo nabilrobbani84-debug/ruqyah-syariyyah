@@ -108,3 +108,6 @@ def sitemap_xml(request):
 </urlset>
 """
     return HttpResponse(content, content_type="application/xml")
+
+def privacy_policy(request):
+    return render(request, 'privacy_policy.html')
