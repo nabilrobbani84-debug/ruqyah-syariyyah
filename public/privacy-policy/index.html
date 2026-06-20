@@ -125,6 +125,64 @@
     </script>
 </head>
 <body class="antialiased font-sans overflow-x-hidden">
-    {% block content %}{% endblock %}
+    
+<!-- Navbar -->
+<nav class="fixed w-full z-50 transition-all duration-300 bg-cream/90 backdrop-blur-md border-b border-sage-green/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+            <div class="flex-shrink-0 flex items-center gap-3">
+                <a href="/" class="flex items-center gap-3">
+                    <img src="/static/images/logo_transparent.webp" alt="Logo Ruqyah Syar'iyyah" class="h-12 w-12 rounded-full border border-forest-green/20" width="48" height="48">
+                    <span class="font-serif text-2xl font-bold text-forest-green">Ruqyah Syar'iyyah</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="text-forest-green hover:text-sage-green transition-colors font-medium">✨ Kembali ke Beranda</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Content -->
+<section class="min-h-screen pt-32 pb-24 relative bg-cream">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="bg-white/80 backdrop-blur-md p-8 md:p-12 rounded-3xl shadow-xl border border-sage-green/20">
+            <h1 class="text-3xl md:text-5xl font-serif font-bold text-deep-green mb-8">Kebijakan Privasi (Privacy Policy)</h1>
+            
+            <div class="space-y-6 text-gray-700 leading-relaxed font-light text-lg">
+                <p>Selamat datang di <strong>Ruqyah Syar'iyyah Ust. Budi Prastowo</strong> (ruqyahsyariyyah.com). Dokumen ini menguraikan jenis informasi pribadi yang diterima dan dikumpulkan oleh kami, serta bagaimana informasi tersebut digunakan.</p>
+
+                <h2 class="text-xl font-bold text-forest-green mt-8">Google AdSense dan Cookie DART</h2>
+                <ul class="list-disc pl-6 space-y-2">
+                    <li>Sebagai vendor pihak ketiga, Google menggunakan cookie untuk menayangkan iklan di situs kami.</li>
+                    <li>Penggunaan cookie DART oleh Google memungkinkan mereka untuk menayangkan iklan kepada pengguna berdasarkan kunjungan mereka ke situs kami dan situs lain di Internet.</li>
+                    <li>Pengguna dapat memilih untuk tidak ikut serta dalam penggunaan cookie DART dengan mengunjungi <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer" class="text-gold-accent hover:underline">kebijakan privasi jaringan iklan dan konten Google</a>.</li>
+                </ul>
+
+                <h2 class="text-xl font-bold text-forest-green mt-8">File Log (Log Files)</h2>
+                <p>Seperti banyak situs web lainnya, ruqyahsyariyyah.com menggunakan file log. Informasi yang terdapat dalam file log meliputi alamat protokol internet (IP), jenis browser, Internet Service Provider (ISP), stempel tanggal/waktu, halaman rujukan/keluar, dan jumlah klik untuk menganalisis tren, mengelola situs, melacak pergerakan pengguna di sekitar situs, dan mengumpulkan informasi demografis. Alamat IP dan informasi lainnya tersebut tidak terkait dengan informasi apa pun yang dapat diidentifikasi secara pribadi.</p>
+
+                <h2 class="text-xl font-bold text-forest-green mt-8">Cookie dan Web Beacon</h2>
+                <p>Kami menggunakan cookie untuk menyimpan informasi tentang preferensi pengunjung, merekam informasi spesifik pengguna pada halaman mana yang diakses atau dikunjungi pengguna, menyesuaikan konten halaman web berdasarkan jenis browser pelanggan atau informasi lain yang dikirimkan pengunjung melalui browser mereka.</p>
+
+                <h2 class="text-xl font-bold text-forest-green mt-8">Mitra Iklan Kami</h2>
+                <p>Beberapa mitra periklanan kami mungkin menggunakan cookie dan web beacon di situs kami. Mitra periklanan kami meliputi: <strong>Google AdSense</strong>. Masing-masing mitra periklanan ini memiliki Kebijakan Privasinya sendiri untuk situs mereka.</p>
+
+                <h2 class="text-xl font-bold text-forest-green mt-8">Informasi Kontak</h2>
+                <p>Jika Anda memerlukan informasi lebih lanjut atau memiliki pertanyaan tentang kebijakan privasi kami, jangan ragu untuk menghubungi kami. Kebijakan Privasi ini dapat diperbarui dari waktu ke waktu dan setiap perubahan akan diposting di halaman ini.</p>
+                
+                <p class="text-sm text-gray-400 mt-12 bg-sage-green/10 inline-block px-4 py-2 rounded-lg">Terakhir Diperbarui: 28 Maret 2026</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-deep-green text-cream pt-12 pb-8 border-t border-white/5 relative">
+    <div class="max-w-7xl mx-auto px-4 text-center text-sm text-sage-green opacity-80">
+        <p>&copy; 2026 Ruqyah Syar'iyyah Ust. Budi Prastowo. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>

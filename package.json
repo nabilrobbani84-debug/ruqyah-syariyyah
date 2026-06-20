@@ -1,0 +1,26 @@
+{
+  "name": "ruqyah_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss -i templates/base_tailwind.css -o static/css/tailwind.min.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nabilrobbani84-debug/ruqyah-syariyyah.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nabilrobbani84-debug/ruqyah-syariyyah/issues"
+  },
+  "homepage": "https://github.com/nabilrobbani84-debug/ruqyah-syariyyah#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
+    "tailwindcss": "^4.3.0"
+  }
+}

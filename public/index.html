@@ -1,13 +1,137 @@
-{% extends 'base.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="id-ID" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruqyah Syar'iyyah Tanpa Kesurupan Bekasi & Jabodetabek | Ust. Budi Prastowo</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Ruqyah Syar'iyyah tanpa kesurupan terpercaya di Bekasi, Jakarta, Bogor, Depok, dan Tangerang (Jabodetabek). Ust. Budi Prastowo – praktisi Thibbun Nabawi dengan rating 5.0 Google. Hubungi via WhatsApp.">
+    <meta name="keywords" content="ruqyah syar'iyyah bekasi, ruqyah tanpa kesurupan jabodetabek, ruqyah jakarta, ruqyah bogor, ruqyah depok, ruqyah tangerang, ruqyah cibubur, ruqyah cikarang, ruqyah tambun, pengobatan islami bekasi, thibbun nabawi jabodetabek, ust budi prastowo, terapi gangguan jin jabodetabek, ruqyah sihir ain, pengobatan alternatif islami, klinik ruqyah terdekat, ustadz ruqyah terpercaya">
+    <meta name="author" content="Ust. Budi Prastowo">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="google-site-verification" content="google1e7b006a43ce6a53.html">
+    <meta name="google-site-verification" content="khdhF5bNMabGalYMYMEI38gCYNT_t8VRoDjvoZ9vBeQ" />
+    <meta name="theme-color" content="#1A4D2E">
+    <!-- Geo Targeting -->
+    <meta name="geo.region" content="ID-JB">
+    <meta name="geo.placename" content="Jatiasih, Bekasi, Jawa Barat">
+    <meta name="geo.position" content="-6.31619199;106.9449831">
+    <meta name="ICBM" content="-6.31619199, 106.9449831">
+    <!-- Language -->
+    <meta name="language" content="Indonesian">
+    <link rel="canonical" href="https://ruqyahsyariyyah.com/">
+    <link rel="alternate" hreflang="id" href="https://ruqyahsyariyyah.com/">
+    
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3405721542728642"
+     crossorigin="anonymous"></script>
 
-{% block content %}
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/static/images/logo_transparent.png">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ruqyahsyar-iyyah.web.app/">
+    <meta property="og:title" content="Ruqyah Syar'iyyah Tanpa Kesurupan | Ust. Budi Prastowo">
+    <meta property="og:description" content="Solusi penyembuhan gangguan jin dan sihir dengan pendekatan yang syar'i di Bekasi, Jakarta, & Jabodetabek. Tanpa kesurupan, 100% aman.">
+    <!-- Menggunakan logo_icon.png karena ukurannya lebih kecil (<300KB) yang wajib untuk WhatsApp, ditambah ?v=2 untuk menembus cache -->
+    <meta property="og:image" content="https://ruqyahsyar-iyyah.web.app/static/images/logo_icon.png?v=2">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ruqyahsyar-iyyah.web.app/">
+    <meta property="twitter:title" content="Ruqyah Syar'iyyah Tanpa Kesurupan | Bekasi & Jabodetabek">
+    <meta property="twitter:description" content="Pengobatan Islami terpercaya di Bekasi, Jakarta, & Jabodetabek. Rating 5.0/5.0. Booking sekarang.">
+    <meta property="twitter:image" content="https://ruqyahsyar-iyyah.web.app/static/images/logo_icon.png?v=2">
+    
+    <!-- Performance Hints -->
+    <link rel="preload" href="/static/images/hero_islamic.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://maps.google.com">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Compiled Minified Tailwind CSS -->
+    <link href="/static/css/tailwind.min.css?v=2" rel="stylesheet">
+
+    <!-- Spline Viewer -->
+
+
+    <style>
+        body {
+            background-color: #F9F9F7;
+            color: #1A4D2E;
+            background-image: radial-gradient(#1A4D2E 0.5px, transparent 0.5px), radial-gradient(#1A4D2E 0.5px, #F9F9F7 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F5F5F0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8FA290;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1A4D2E;
+        }
+    </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Ruqyah Syar'iyyah Ust. Budi Prastowo",
+      "image": "https://ruqyahsyar-iyyah.web.app/static/images/logo_icon.png",
+      "@id": "https://ruqyahsyariyyah.com/",
+      "url": "https://ruqyahsyariyyah.com/",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jatiasih",
+        "addressLocality": "Bekasi",
+        "addressRegion": "Jawa Barat",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.31619199,
+        "longitude": 106.9449831
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "415"
+      },
+      "areaServed": ["Bekasi", "Jakarta", "Bogor", "Depok", "Tangerang", "Jabodetabek"],
+      "description": "Ruqyah Syar'iyyah tanpa kesurupan di Jatiasih, Bekasi melayani wilayah Jabodetabek. Ust. Budi Prastowo – praktisi Thibbun Nabawi terpercaya."
+    }
+    </script>
+</head>
+<body class="antialiased font-sans overflow-x-hidden">
+    
 <!-- Navbar -->
 <nav class="fixed w-full z-50 transition-all duration-300 bg-cream/90 backdrop-blur-md border-b border-sage-green/20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
             <div class="flex-shrink-0 flex items-center gap-3">
-                <img src="{% static 'images/logo_transparent.webp' %}" alt="Logo Ruqyah Syar'iyyah" class="h-12 w-12 rounded-full border border-forest-green/20" width="48" height="48">
+                <img src="/static/images/logo_transparent.webp" alt="Logo Ruqyah Syar'iyyah" class="h-12 w-12 rounded-full border border-forest-green/20" width="48" height="48">
                 <span class="font-serif text-lg sm:text-2xl font-bold text-forest-green">Ruqyah Syar'iyyah</span>
             </div>
             <div class="hidden md:flex space-x-8">
@@ -91,7 +215,7 @@
             <div class="relative h-[300px] sm:h-[400px] lg:h-[600px] w-full flex items-center justify-center">
                 <div class="absolute inset-0 bg-gold-accent/5 rounded-full filter blur-3xl opacity-50 transform translate-x-10 translate-y-10"></div>
                 
-                <img src="{% static 'images/hero_islamic.webp' %}" alt="Ruqyah Syar'iyyah Illustration" class="relative z-10 w-full h-full object-contain drop-shadow-2xl animate-blob" width="1024" height="1024" fetchpriority="high">
+                <img src="/static/images/hero_islamic.webp" alt="Ruqyah Syar'iyyah Illustration" class="relative z-10 w-full h-full object-contain drop-shadow-2xl animate-blob" width="1024" height="1024" fetchpriority="high">
                 
                 <!-- Floating Card -->
                 <div class="absolute bottom-20 left-10 glass-card p-5 rounded-2xl animate-bounce-slow max-w-xs z-20 hidden md:block">
@@ -271,7 +395,7 @@
                 <!-- Profile Image Placeholder -->
                 <div class="md:col-span-1 max-w-xs mx-auto w-full">
                     <div class="aspect-[3/4] rounded-2xl bg-gradient-to-b from-sage-green to-forest-green relative overflow-hidden shadow-lg group">
-                        <img src="{% static 'images/ustadz_profile.webp' %}" alt="Ust. Budi Prastowo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" width="514" height="510" loading="lazy">
+                        <img src="/static/images/ustadz_profile.webp" alt="Ust. Budi Prastowo" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" width="514" height="510" loading="lazy">
                     </div>
                 </div>
                 
@@ -389,20 +513,7 @@
                 <h2 class="text-3xl font-serif font-bold text-deep-green mb-2">Jadwalkan Terapi Anda</h2>
                 <p class="text-gray-600 mb-8">Silakan isi formulir di bawah ini untuk mendapatkan jadwal konsultasi.</p>
                 
-                {% if messages %}
-                <div class="mb-6 space-y-2">
-                    {% for message in messages %}
-                        <div class="p-4 rounded-xl border {% if message.tags == 'success' %}bg-green-50 border-green-200 text-green-700{% else %}bg-red-50 border-red-200 text-red-700{% endif %} flex items-center gap-3">
-                            {% if message.tags == 'success' %}
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                            {% else %}
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            {% endif %}
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-                </div>
-                {% endif %}
+                
 
                 <form id="bookingForm" onsubmit="handleBooking(event)" class="space-y-5 bg-white/80 backdrop-blur-xl p-6 sm:p-10 rounded-[2rem] shadow-2xl border border-white/50 relative overflow-hidden group">
                     <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-forest-green via-gold-accent to-forest-green transform scale-x-0 group-hover:scale-x-100 transition-transform duration-700"></div>
@@ -469,7 +580,7 @@
                             <div>
                                 <h4 class="font-bold text-deep-green text-lg mb-1">Alamat Praktik</h4>
                                 <p class="leading-relaxed text-sm">
-                                    {{ business.address }}
+                                    Jl. H. Anan No.124 RT01 RW07 Pedurenan Bulak, Jatiluhur, Kec. Jatiasih, Kota Bekasi, Jawa Barat 17425
                                 </p>
                             </div>
                         </div>
@@ -479,7 +590,7 @@
                             </div>
                             <div>
                                 <h4 class="font-bold text-deep-green text-lg mb-1">Hubungi Kami</h4>
-                                <p class="font-bold font-mono text-lg text-forest-green">{{ business.phone }}</p>
+                                <p class="font-bold font-mono text-lg text-forest-green">0856-9739-7988</p>
                             </div>
                         </div>
                     </div>
@@ -487,7 +598,7 @@
 
                 <!-- Map Embed -->
                 <div class="w-full h-80 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white transform transition-transform hover:scale-[1.02]">
-                     <iframe src="{{ business.map_url }}" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     <iframe src="https://maps.google.com/maps?q=Ruqyah%20Syar&#x27;iyyah%20Tanpa%20Kesurupan%20Ust%20Budi%20Prastowo&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -634,7 +745,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <a href="#home" class="hover:text-gold-accent transition-colors">Beranda</a>
                     <a href="#about" class="hover:text-gold-accent transition-colors">Tentang Kami</a>
                     <a href="#booking" class="hover:text-gold-accent transition-colors">Jadwal Praktik</a>
-                    <a href="{% url 'privacy_policy' %}" class="hover:text-gold-accent transition-colors">Privacy Policy</a>
+                    <a href="/privacy-policy/" class="hover:text-gold-accent transition-colors">Privacy Policy</a>
                 </div>
             </div>
 
@@ -849,4 +960,6 @@ document.addEventListener('DOMContentLoaded', () => {
     animation: bounce 3s infinite;
 }
 </style>
-{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+@import "tailwindcss";
+@source "./**/*.html";
+
+@theme {
+  --color-sage-green: #8FA290;
+  --color-forest-green: #1A4D2E;
+  --color-deep-green: #0F2F1C;
+  --color-cream: #F9F9F7;
+  --color-gold-accent: #C5A059;
+  --color-gold-light: #E5C985;
+
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-arabic: "Amiri", serif;
+
+  --animate-bounce-slow: bounce 3s infinite;
+}
+
+@utility animate-blob {
+  animation: blob 7s infinite;
+}
+
+@utility animate-bounce-slow {
+  animation: bounce 3s infinite;
+}
+
+@keyframes blob {
+  0% {
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(1.05);
+  }
+  66% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

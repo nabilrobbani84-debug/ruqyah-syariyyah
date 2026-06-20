@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+db.sqlite3
+.env
+
+# Node
+node_modules/
+
+# Firebase
+.firebase/
+
+# Temp
+projects.txt
