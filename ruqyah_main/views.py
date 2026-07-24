@@ -86,6 +86,7 @@ def landing_page(request):
     return render(request, 'landing.html', context)
 
 from django.http import HttpResponse
+from datetime import datetime
 
 def robots_txt(request):
     content = """User-agent: *
@@ -97,20 +98,21 @@ Sitemap: https://ruqyahsyariyyah.com/sitemap.xml
     return HttpResponse(content, content_type="text/plain")
 
 def sitemap_xml(request):
-    content = """<?xml version="1.0" encoding="UTF-8"?>
+    current_date = datetime.now().strftime('%Y-%m-%d')
+    content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://ruqyahsyariyyah.com/</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>{current_date}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://ruqyahsyariyyah.com/privacy-policy/</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>{current_date}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
