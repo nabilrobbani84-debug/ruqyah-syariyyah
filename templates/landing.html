@@ -36,50 +36,57 @@
 </nav>
 
 <!-- Hero Section -->
-<section id="home" class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<section id="home" class="relative min-h-[calc(100vh-5rem)] flex items-center pt-24 sm:pt-28 lg:pt-24 pb-12 sm:pb-16 lg:pb-20 overflow-hidden bg-gradient-to-b from-cream via-cream to-white">
     <!-- Background Decor -->
-    <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-sage-green/10 to-transparent pointer-events-none"></div>
+    <div class="absolute top-0 right-0 w-full sm:w-2/3 lg:w-1/2 h-full bg-gradient-to-bl from-sage-green/15 via-gold-accent/5 to-transparent pointer-events-none"></div>
+    <div class="absolute -top-24 -left-24 w-72 h-72 sm:w-96 sm:h-96 bg-sage-green/10 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
             <!-- Left Content -->
-            <div class="space-y-8 animate-fade-in-up">
+            <div class="lg:col-span-7 space-y-6 sm:space-y-8 animate-fade-in-up text-center lg:text-left flex flex-col items-center lg:items-start">
                 
-                <h1 class="font-serif text-2xl sm:text-5xl lg:text-7xl font-bold leading-tight text-deep-green">
-                    <span class="font-arabic text-xl sm:text-4xl lg:text-5xl text-gold-accent block mb-6 " style="line-height: 1.5;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
+                <!-- Badge Pill -->
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-forest-green/10 border border-forest-green/20 text-forest-green text-xs sm:text-sm font-medium">
+                    <span class="inline-block w-2 h-2 rounded-full bg-forest-green animate-pulse"></span>
+                    <span>Pusat Ruqyah Syar'iyyah Terpercaya di Indonesia</span>
+                </div>
+
+                <h1 class="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-[1.2] text-deep-green max-w-2xl">
+                    <span class="font-arabic text-2xl sm:text-4xl lg:text-5xl text-gold-accent block mb-3 sm:mb-5 tracking-wide" style="line-height: 1.6;">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</span>
                     Pengobatan <span class="text-forest-green italic relative inline-block">
                         Syar'iyyah
-                        <svg class="absolute w-full h-3 -bottom-2 left-0 text-gold-accent/60" viewBox="0 0 100 10" preserveAspectRatio="none">
+                        <svg class="absolute w-full h-2.5 sm:h-3 -bottom-1.5 sm:-bottom-2 left-0 text-gold-accent/60" viewBox="0 0 100 10" preserveAspectRatio="none">
                             <path d="M0 5 Q 50 10 100 5" stroke="currentColor" stroke-width="3" fill="none" />
                         </svg>
                     </span><br>
                     Tanpa Kesurupan
                 </h1>
                 
-                <p class="text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed font-light">
+                <p class="text-base sm:text-lg text-gray-600 max-w-xl leading-relaxed font-light">
                     Solusi penyembuhan gangguan jin dan sihir dengan pendekatan syar'i, menenangkan, dan profesional. Dipercaya oleh pasien dari seluruh Indonesia. Fokus pada kesembuhan jiwa dan raga.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                    <a href="#booking" class="px-6 py-4 sm:px-8 bg-forest-green text-white rounded-xl hover:bg-deep-green transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1 text-center font-medium flex items-center justify-center gap-2 group">
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-3.5 sm:gap-4 w-full sm:w-auto pt-2">
+                    <a href="#booking" class="w-full sm:w-auto px-7 py-3.5 sm:py-4 bg-forest-green text-white rounded-xl hover:bg-deep-green transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 text-center font-medium flex items-center justify-center gap-2 group">
                         <span>Konsultasi Sekarang</span>
                         <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                     </a>
-                    <a href="#about" class="px-6 py-4 sm:px-8 bg-white/50 border border-forest-green/20 text-forest-green rounded-xl hover:bg-white transition-all font-medium text-center shadow-lg hover:shadow-xl">
+                    <a href="#about" class="w-full sm:w-auto px-7 py-3.5 sm:py-4 bg-white/80 border border-forest-green/20 text-forest-green rounded-xl hover:bg-white transition-all font-medium text-center shadow-sm hover:shadow-md">
                         Pelajari Metode
                     </a>
                 </div>
-            </div>
 
                 <!-- Trust Indicator -->
-                 <div class="flex items-center gap-4 pt-4">
-                    <div class="flex -space-x-3">
-                        <div class="w-10 h-10 rounded-full bg-slate-200 border-2 border-white flex items-center justify-center text-xs font-bold text-gray-500">A</div>
-                        <div class="w-10 h-10 rounded-full bg-slate-100 border-2 border-white flex items-center justify-center text-xs font-bold text-gray-500">B</div>
-                        <div class="w-10 h-10 rounded-full bg-slate-300 border-2 border-white flex items-center justify-center text-xs font-bold text-gray-500">C</div>
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 sm:pt-4 border-t border-forest-green/10 w-full max-w-md lg:max-w-none">
+                    <div class="flex -space-x-2.5">
+                        <div class="w-9 h-9 rounded-full bg-forest-green/20 border-2 border-white flex items-center justify-center text-xs font-bold text-forest-green">A</div>
+                        <div class="w-9 h-9 rounded-full bg-sage-green/30 border-2 border-white flex items-center justify-center text-xs font-bold text-forest-green">B</div>
+                        <div class="w-9 h-9 rounded-full bg-gold-accent/30 border-2 border-white flex items-center justify-center text-xs font-bold text-forest-green">C</div>
                     </div>
-                    <div class="text-sm">
-                        <div class="flex text-gold-accent">
+                    <div class="text-left text-xs sm:text-sm">
+                        <div class="flex text-gold-accent text-sm sm:text-base leading-none mb-1">
                             ★★★★★
                         </div>
                         <p class="text-gray-600">Dipercaya <span class="font-bold text-forest-green">415+ Pasien</span> Se-Indonesia</p>
@@ -88,20 +95,23 @@
             </div>
 
             <!-- Right Content (Image) -->
-            <div class="relative h-[300px] sm:h-[400px] lg:h-[600px] w-full flex items-center justify-center">
-                <div class="absolute inset-0 bg-gold-accent/5 rounded-full filter blur-3xl opacity-50 transform translate-x-10 translate-y-10"></div>
-                
-                <img src="{% static 'images/hero_islamic.webp' %}" alt="Ruqyah Syar'iyyah Illustration" class="relative z-10 w-full h-full object-contain drop-shadow-2xl animate-blob" width="1024" height="1024" fetchpriority="high">
-                
-                <!-- Floating Card -->
-                <div class="absolute bottom-20 left-10 glass-card p-5 rounded-2xl animate-bounce-slow max-w-xs z-20 hidden md:block">
-                    <div class="flex items-center gap-4">
-                        <div class="p-3 bg-green-100/50 rounded-full">
-                            <span class="text-2xl">✨</span>
-                        </div>
-                        <div>
-                            <p class="text-xs text-gray-500 uppercase tracking-wider">Metode</p>
-                            <p class="font-bold text-deep-green">100% Syar'i & Aman</p>
+            <div class="lg:col-span-5 relative w-full flex items-center justify-center">
+                <div class="relative w-full max-w-sm sm:max-w-md lg:max-w-none h-[300px] sm:h-[400px] lg:h-[500px] xl:h-[560px] flex items-center justify-center">
+                    <!-- Glow Backdrop -->
+                    <div class="absolute inset-4 sm:inset-6 bg-gold-accent/15 rounded-full filter blur-2xl sm:blur-3xl opacity-60"></div>
+                    
+                    <img src="{% static 'images/hero_islamic.webp' %}" alt="Ruqyah Syar'iyyah Illustration" class="relative z-10 w-full h-full object-contain drop-shadow-2xl animate-blob max-h-[320px] sm:max-h-[420px] lg:max-h-[520px]" width="1024" height="1024" fetchpriority="high">
+                    
+                    <!-- Floating Card -->
+                    <div class="absolute -bottom-2 sm:bottom-6 lg:bottom-10 left-2 sm:left-4 lg:-left-6 glass-card p-3 sm:p-4 rounded-2xl shadow-xl max-w-[210px] sm:max-w-xs z-20 animate-bounce-slow border border-white/60">
+                        <div class="flex items-center gap-2.5 sm:gap-3.5">
+                            <div class="p-2 sm:p-2.5 bg-green-100/70 text-forest-green rounded-xl flex-shrink-0">
+                                <span class="text-lg sm:text-xl">✨</span>
+                            </div>
+                            <div>
+                                <p class="text-[10px] sm:text-xs text-gray-500 uppercase tracking-wider font-semibold">Metode</p>
+                                <p class="text-xs sm:text-sm font-bold text-deep-green leading-tight">100% Syar'i & Aman</p>
+                            </div>
                         </div>
                     </div>
                 </div>
