@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Allow: /
 
-Sitemap: https://ruqyahsyariyyah.com/sitemap.xml
+Sitemap: https://ruqyahsyariyyah.my.id/sitemap.xml

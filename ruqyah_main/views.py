@@ -93,7 +93,7 @@ def robots_txt(request):
 Disallow: /admin/
 Allow: /
 
-Sitemap: https://ruqyahsyariyyah.com/sitemap.xml
+Sitemap: https://ruqyahsyariyyah.my.id/sitemap.xml
 """
     return HttpResponse(content, content_type="text/plain")
 
@@ -105,13 +105,13 @@ def sitemap_xml(request):
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://ruqyahsyariyyah.com/</loc>
+    <loc>https://ruqyahsyariyyah.my.id/</loc>
     <lastmod>{current_date}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ruqyahsyariyyah.com/privacy-policy/</loc>
+    <loc>https://ruqyahsyariyyah.my.id/privacy-policy/</loc>
     <lastmod>{current_date}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
