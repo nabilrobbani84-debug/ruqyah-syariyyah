@@ -38,6 +38,12 @@ res_sitemap = client.get('/sitemap.xml')
 with open(os.path.join(public_dir, 'sitemap.xml'), 'wb') as f:
     f.write(res_sitemap.content)
 
+# Google Search Console verification
+res_google = client.get('/google1e7b006a43ce6a53.html')
+with open(os.path.join(public_dir, 'google1e7b006a43ce6a53.html'), 'wb') as f:
+    f.write(res_google.content)
+print(f"Google verification file generated: {len(res_google.content)} bytes")
+
 # Copy static files
 static_source = os.path.join(settings.BASE_DIR, 'static')
 static_dest = os.path.join(public_dir, 'static')

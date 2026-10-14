@@ -122,3 +122,6 @@ def sitemap_xml(request):
 
 def privacy_policy(request):
     return render(request, 'privacy_policy.html')
+
+def google_verification(request):
+    return HttpResponse("google-site-verification: google1e7b006a43ce6a53.html", content_type="text/html")
